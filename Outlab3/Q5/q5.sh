@@ -1,4 +1,5 @@
 #! /bin/bash
+# AUTHOR: ASHWIN ABRAHAM
 
 awk -v num=$3 '{
     if(NR == FNR)

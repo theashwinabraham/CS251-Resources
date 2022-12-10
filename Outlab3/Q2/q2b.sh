@@ -1,4 +1,5 @@
 #! /bin/bash
+# AUTHOR: ASHWIN ABRAHAM
 
 IMAGES=${1-"images"}
 

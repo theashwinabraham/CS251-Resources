@@ -1,5 +1,5 @@
 #! /bin/bash
-
+# AUTHOR: ASHWIN ABRAHAM
 x=0
 y=1
 str=""

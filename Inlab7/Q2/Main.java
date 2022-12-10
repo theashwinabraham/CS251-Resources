@@ -1,6 +1,8 @@
 package Q2;
 import java.util.Scanner;
-
+/* 
+ * IMPLEMENTED BY: ASHWIN ABRAHAM
+*/
 public class Main {
 
     /*

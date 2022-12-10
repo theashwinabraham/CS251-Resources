@@ -1,4 +1,5 @@
 #! /bin/bash
+# AUTHOR: ASHWIN ABRAHAM
 
 cat $1 | awk -v args="$*" 'BEGIN {
     num = split(args, the_args, " ")

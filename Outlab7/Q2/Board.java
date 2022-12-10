@@ -1,5 +1,9 @@
 package Q2 ;
 
+/*
+ * IMPLEMENTED BY: ASHWIN ABRAHAM
+ */
+
 public class Board {
     private int [][] board = new int[3][3];
     /* elements of board is either 0, 1 or 2 

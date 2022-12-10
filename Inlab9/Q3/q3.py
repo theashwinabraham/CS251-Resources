@@ -1,3 +1,5 @@
+# AUTHOR: ASHWIN ABRAHAM
+
 import sys, os
 
 x = int(os.system(f'ping -c 5 {sys.argv[1]} > /dev/null'))

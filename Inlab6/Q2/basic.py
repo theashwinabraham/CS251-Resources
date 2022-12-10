@@ -1,3 +1,5 @@
+# AUTHOR: ASHWIN ABRAHAM
+
 def binarySearch(arr, val):
     '''This function does a binary search for an element in the array.
 

@@ -1,6 +1,6 @@
 /*!
  * @file DSA.cpp
- * @author 210050023
+ * @author 210050023 (ASHWIN ABRAHAM)
  * @date 21st September 2022
  * @brief Some implementations of common Data Structures and Algorithms
  * @tableofcontents

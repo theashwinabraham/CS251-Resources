@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{github}
+Ashwin Abraham.
+\newblock My {G}it{H}ub, 2021.
+
+\bibitem{cs251}
+Ashwin Abraham.
+\newblock Cs 251 - previous labs, 2022.
+
+\bibitem{loremipsum}
+Marcus~Tullius Cicero.
+\newblock {\em De finibus bonorum et malorum}.
+\newblock Loeb Classical Library, 50s BC.
+
+\bibitem{wikisort}
+Wikipedia Editors.
+\newblock The wikipedia article on sorting algorithms.
+
+\bibitem{complexities}
+Matteo~Kimura Leonardo~Galler.
+\newblock Sorting algorithms.
+\newblock {\em Laboratório de Aprendizado de Máquina em Finanças e
+  Organizações}, 2019.
+
+\bibitem{ssort}
+w3~resources.
+\newblock Selection sort.
+
+\end{thebibliography}

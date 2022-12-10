@@ -1,3 +1,5 @@
+# AUTHOR: ASHWIN ABRAHAM
+
 import sqlite3
 
 connection = sqlite3.connect('ipl.db')

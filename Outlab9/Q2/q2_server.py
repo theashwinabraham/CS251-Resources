@@ -1,3 +1,5 @@
+# AUTHOR: ASHWIN ABRAHAM
+
 from xmlrpc.server import SimpleXMLRPCServer
 from xmlrpc.server import SimpleXMLRPCRequestHandler
 import magic

@@ -1,3 +1,5 @@
+# AUTHOR: ASHWIN ABRAHAM
+
 {
     base = 8 + 2*(NR%3);
     num = 0;

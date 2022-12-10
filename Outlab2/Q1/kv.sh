@@ -1,4 +1,5 @@
 #! /bin/bash
+# AUTHOR: ASHWIN ABRAHAM
 
 if [ "$1" = "storeInfo" ]
 then

@@ -1,4 +1,5 @@
 #!/bin/bash
+# AUTHOR: ASHWIN ABRAHAM
 
 function update_pw()
 {

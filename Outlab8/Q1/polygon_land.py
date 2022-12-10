@@ -1,3 +1,5 @@
+# IMPLEMENTED BY: ASHWIN ABRAHAM
+
 def minCost(values):
     """
         This function accepts list

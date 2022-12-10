@@ -1,3 +1,5 @@
+# IMPLEMENTED BY: ASHWIN ABRAHAM
+
 # Running your solution - You can run this script in console with the command given in the next line
 # python q2.py 10
 # Here 10 is the input provided by the user. Hence the output should be the list of prime numbers less than or equal to 10. Your console output shpuld be:

@@ -1,4 +1,5 @@
 #! /bin/bash
+# AUTHOR: ASHWIN ABRAHAM
 
 cat $1 | awk 'BEGIN {
     alph[10] = "a"

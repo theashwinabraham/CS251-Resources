@@ -1,6 +1,10 @@
 package Q3 ;
 
 /*
+ * AUTHOR: ASHWIN ABRAHAM
+*/
+
+/*
  * TODO: Create class Truck along with proper methods and inheritance as required
  */
 

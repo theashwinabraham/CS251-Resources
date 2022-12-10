@@ -1,5 +1,7 @@
 package Q1;
-
+/* 
+ * IMPLEMENTED BY: ASHWIN ABRAHAM
+ */
 public class Matrix {
     private int n,m ;
     private int mat[][] ;
