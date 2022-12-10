@@ -1,0 +1,36 @@
+/* AUTHOR: ASHWIN ABRAHAM */
+
+#div1 {
+    position: relative;
+    left: 20px;
+}
+
+#to_change {
+    color: blue;
+}
+
+#to_red {
+    position: relative;
+    left: 100px;
+    background-color: red;
+    padding: 2px 4px;
+}
+
+#to_blue {
+    position: relative;
+    left: 100px;
+    background-color: blue;
+    padding: 5px 10px;
+}
+
+#submit {
+    position: relative;
+    left: 120px;
+    background-color: rgb(19, 226, 19);
+}
+
+#submit:focus {
+    position: relative;
+    left: 120px;
+    background-color: rgb(17, 94, 17);
+}

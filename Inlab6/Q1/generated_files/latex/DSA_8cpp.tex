@@ -1,0 +1,151 @@
+\hypertarget{DSA_8cpp}{}\doxysection{D\+S\+A.\+cpp File Reference}
+\label{DSA_8cpp}\index{DSA.cpp@{DSA.cpp}}
+
+
+Some implementations of common Data Structures and Algorithms.  
+
+
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+Include dependency graph for D\+S\+A.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{DSA_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classSinglyLinkedListNode}{Singly\+Linked\+List\+Node}}
+\begin{DoxyCompactList}\small\item\em The class for each node in a singly linked list. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}
+\begin{DoxyCompactList}\small\item\em The class for a singly linked list. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classDoublyLinkedListNode}{Doubly\+Linked\+List\+Node}}
+\begin{DoxyCompactList}\small\item\em The class for each node in a doubly linked list. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classDoublyLinkedList}{Doubly\+Linked\+List}}
+\begin{DoxyCompactList}\small\item\em The class for a doubly linked list. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classBSTNode}{B\+S\+T\+Node}}
+\begin{DoxyCompactList}\small\item\em The class for each node in a Binary Search Tree. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classBinarySearchTree}{Binary\+Search\+Tree}}
+\begin{DoxyCompactList}\small\item\em The class for a Binary Search Tree. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTrie}{Trie}}
+\begin{DoxyCompactList}\small\item\em The class for a Suffix-\/\+Trie. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classHeap}{Heap}}
+\begin{DoxyCompactList}\small\item\em This class is used to represent a min heap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{DSA_8cpp_ae1d1ec9482079231e898236e2b23c9ba}\label{DSA_8cpp_ae1d1ec9482079231e898236e2b23c9ba}} 
+\#define {\bfseries ll}~long long int
+\item 
+\mbox{\Hypertarget{DSA_8cpp_a9a6d93cda3e4d178aabe221b341f8590}\label{DSA_8cpp_a9a6d93cda3e4d178aabe221b341f8590}} 
+\#define {\bfseries vi}~vector$<$int$>$
+\item 
+\mbox{\Hypertarget{DSA_8cpp_a3fae215f58aac1c42f0223648760c4cb}\label{DSA_8cpp_a3fae215f58aac1c42f0223648760c4cb}} 
+\#define {\bfseries vll}~vector$<$ll$>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{DSA_8cpp_a9461d2de3283e4aee1e984527d9a7f46}{operator$<$$<$}} (ostream \&out, const \mbox{\hyperlink{classSinglyLinkedListNode}{Singly\+Linked\+List\+Node}} \&node)
+\begin{DoxyCompactList}\small\item\em A function that prints out the data in a node object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}} \mbox{\hyperlink{DSA_8cpp_a0bddd8794faaa2a7d14108d47b820cf7}{merge}} (\mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}} list1, \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}} list2)
+\begin{DoxyCompactList}\small\item\em Merges two sorted singly linked lists and returns the new list. \end{DoxyCompactList}\item 
+ostream \& \mbox{\hyperlink{DSA_8cpp_aa8b01464337373b11bb3dc0b9c0bf3ef}{operator$<$$<$}} (ostream \&out, const \mbox{\hyperlink{classDoublyLinkedListNode}{Doubly\+Linked\+List\+Node}} \&node)
+\begin{DoxyCompactList}\small\item\em Prints out the data in a node. \end{DoxyCompactList}\item 
+ostream \& \mbox{\hyperlink{DSA_8cpp_aa36f567e16101108b0f20820869cc9e1}{operator$<$$<$}} (ostream \&out, const \mbox{\hyperlink{classBSTNode}{B\+S\+T\+Node}} \&node)
+\begin{DoxyCompactList}\small\item\em Prints out the data stored in a node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Some implementations of common Data Structures and Algorithms. 
+
+\begin{DoxyAuthor}{Author}
+CS 251 T\+As 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+21st September 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{DSA_8cpp_a0bddd8794faaa2a7d14108d47b820cf7}\label{DSA_8cpp_a0bddd8794faaa2a7d14108d47b820cf7}} 
+\index{DSA.cpp@{DSA.cpp}!merge@{merge}}
+\index{merge@{merge}!DSA.cpp@{DSA.cpp}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}} merge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}}]{list1,  }\item[{\mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}}]{list2 }\end{DoxyParamCaption})}
+
+
+
+Merges two sorted singly linked lists and returns the new list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list1} & A sorted singly linked list \\
+\hline
+{\em list2} & Another sorted singly linked list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{DSA_8cpp_aa36f567e16101108b0f20820869cc9e1}\label{DSA_8cpp_aa36f567e16101108b0f20820869cc9e1}} 
+\index{DSA.cpp@{DSA.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!DSA.cpp@{DSA.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classBSTNode}{B\+S\+T\+Node}} \&}]{node }\end{DoxyParamCaption})}
+
+
+
+Prints out the data stored in a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The stream to which data is to be printed \\
+\hline
+{\em node} & The node whose data is to be printed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ostream\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{DSA_8cpp_aa8b01464337373b11bb3dc0b9c0bf3ef}\label{DSA_8cpp_aa8b01464337373b11bb3dc0b9c0bf3ef}} 
+\index{DSA.cpp@{DSA.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!DSA.cpp@{DSA.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classDoublyLinkedListNode}{Doubly\+Linked\+List\+Node}} \&}]{node }\end{DoxyParamCaption})}
+
+
+
+Prints out the data in a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Stream in which data is to be printed \\
+\hline
+{\em node} & Node whose data is to be printed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ostream\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{DSA_8cpp_a9461d2de3283e4aee1e984527d9a7f46}\label{DSA_8cpp_a9461d2de3283e4aee1e984527d9a7f46}} 
+\index{DSA.cpp@{DSA.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!DSA.cpp@{DSA.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classSinglyLinkedListNode}{Singly\+Linked\+List\+Node}} \&}]{node }\end{DoxyParamCaption})}
+
+
+
+A function that prints out the data in a node object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & (The stream) \\
+\hline
+{\em node} & (The node object) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ostream\& 
+\end{DoxyReturn}

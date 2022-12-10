@@ -1,0 +1,3 @@
+a aa b cc jkl mnop qrst
+z qwed this is very secure encoding
+good luck

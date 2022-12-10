@@ -1,0 +1,17 @@
+AUTHOR: ASHWIN ABRAHAM
+
+REFERENCES:
+
+1. https://docs.google.com/document/d/1A1AFubYk62KYH0xwGcKRaT_tGfZE55SwKNt4jfAMPoU/preview?pru=AAABgqs5BR4*qToCTAEVMv0qd8g_t8BtCw
+2. https://stackoverflow.com/questions/44263892/how-to-style-a-clicked-button-in-css
+3. https://www.w3schools.com/html/html_css.asp
+4. https://getbootstrap.com/docs/5.2/getting-started/introduction/
+5. https://www.w3schools.com/css/css3_buttons.asp
+6. https://www.w3schools.com/html/html_styles.asp
+7. https://www.w3schools.com/tags/tag_textarea.asp#:~:text=The%20element%20is%20often,attributes%20(or%20with%20CSS).
+8. https://www.tutorialspoint.com/css/css_positioning.htm
+9. https://www.w3schools.com/cssref/pr_dim_width.asp
+10. https://docs.fileformat.com/web/css/#:~:text=Output%20Comparison-,What%20is%20a%20CSS%20file%3F,defined%20in%20an%20external%20stylesheet.
+11. https://www.w3schools.com/css/css_selectors.asp
+12. https://www.w3schools.com/js/js_popup.asp
+13. https://www.w3schools.com/jsref/prop_textarea_value.asp

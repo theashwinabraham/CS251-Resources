@@ -1,0 +1,157 @@
+\documentclass{beamer}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\hypersetup
+{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=cyan,
+pdftitle={\LaTeX{} Basics \& Advanced},
+pdfpagemode=FullScreen,
+}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+
+\title[\LaTeX{} Basics \& Advanced] 
+{\LaTeX{} Basics \& Advanced}
+
+
+\author[Ashwin Abraham] 
+{Ashwin Abraham}
+
+\institute[IIT-B] 
+{
+    IIT Bombay
+}
+
+\date[2022]
+{August 2022}
+
+\logo{\includegraphics[height=2cm]{iitb-logo.png}}
+
+
+\begin{document}
+    \frame{\titlepage}
+
+    \section{Introduction}
+    {
+        \begin{frame}
+            \frametitle{Introduction}
+                \texttt{\$ whoami\pause \\ \$ ashwinabraham}
+
+
+            \pause
+            Who am I? 
+            You sure you want to know? 
+            The story of my life is not for the faint of heart. 
+            If somebody said it was a happy little tale... 
+            if somebody told you I was just your average ordinary guy, not a care in the world... somebody lied.\footnote{Adapted from \textit{Spider-Man (2002)}}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Table of Contents}
+            \tableofcontents
+    
+            Ayy! I can redirect to stuff :D
+        \end{frame}
+        
+        \begin{frame}
+            \frametitle{Introduction to \LaTeX{}}
+
+            What \textbf{\LaTeX{}} is\footnote{Adapted from the \href{https://en.wikipedia.org/wiki/LaTeX}{Wikipedia article on \LaTeX{}}}:
+
+            \textbf{\LaTeX{}} is a software system for document preparation. 
+            When writing, the writer uses \textbf{plain text} \pause as opposed to the \textit{formatted text} found in \texttt{WYSIWYG} word processors like \textit{Microsoft Word}, \textit{LibreOffice Writer} and \textit{Apple Pages}. 
+            \pause
+            The writer uses markup tagging conventions to define the general structure of a document \pause to \textcolor{red}{stylise text throughout a document} (such as \textbf{bold} and \textit{italics})\pause, and to add citations and cross-references. 
+            \pause
+            A TeX distribution such as TeX Live or MiKTeX is used to produce an output file (such as PDF or DVI) suitable for printing or digital distribution.
+
+        \end{frame}
+    }
+
+    \section{Equations}
+    {
+        \begin{frame}
+            \frametitle{Equations}
+            We can also write equations in \LaTeX{}!!
+
+            A labelled equation:
+            \pause
+            \begin{equation}
+                e^{i\alpha} = \cos(\alpha) + i\sin(\alpha)
+            \end{equation}
+            \pause
+            An unlabelled equation:
+            \pause
+            \begin{equation*}
+                F = \frac{1}{4\pi\epsilon_{0}} \frac{q_{1}q_{2}}{r^{2}}
+            \end{equation*}
+        \end{frame}
+    }
+
+    \section{Itemization and Linking}
+    {
+        \begin{frame}
+            \frametitle{Some Sorting Algorithms}
+            There exist many sorting algorithms.
+            \pause
+
+            Some algorithms run in $O(n^{2})$, such as:
+            \pause
+            \begin{itemize}
+                \item Bubble Sort
+                \item Selection Sort
+            \end{itemize}
+            \pause
+            Some run in $O(n\log(n))$, such as:
+            \pause
+            \begin{itemize}
+                \item Merge Sort
+                \item Quick Sort
+            \end{itemize}
+            \pause
+            Some run in $O(n)$ (for some arrays), such as:
+            \pause
+            \begin{itemize}
+                \item Counting Sort
+            \end{itemize}
+            \pause
+            And some are \textcolor{pink}{joke algorithms}, such as:
+            \begin{itemize}
+                \item <8-> \textit{\href{https://en.wikipedia.org/wiki/Bogosort}{Bogosort}}
+                \item <9-> \textit{\href{https://quantumcomputing.stackexchange.com/questions/1265/what-can-we-learn-from-quantum-bogosort}{Quantum Bogosort}}
+                \item <10-> \textit{\href{https://en.wikipedia.org/wiki/Slowsort}{Slowsort}}
+            \end{itemize}
+            which are \textbf{way worse} than even $O(n^{2})$!
+        \end{frame}
+    }
+
+    \section{Matrices and Indented Equations}
+    {
+        \begin{frame}
+            \frametitle{Matrices and Indented Equations}
+            We can also write matrices in \LaTeX{}!
+
+            For example the (3x3) Identity Matrix can be written as:
+            \begin{equation*}
+                I_{3} = \begin{bmatrix}
+                    1 & 0 & 0 \\
+                    0 & 1 & 0 \\
+                    0 & 0 & 1
+                \end{bmatrix}
+            \end{equation*}
+            \pause
+            I can also indent equations, like so:
+            \begin{align*}
+                (\textbf{a}\cdot\textbf{b})^{2} &= (\sum a_{i}b_{i})^{2} \\
+                &\leq (\sum a_{i})^{2}(\sum b_{i})^{2}
+            \end{align*}
+        \end{frame}
+    }
+\end{document}

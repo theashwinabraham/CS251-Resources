@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Singly Linked List &mdash; outlabq2  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Heap" href="Heap.html" />
+    <link rel="prev" title="q2" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> outlabq2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">q2</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Singly Linked List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Heap.html">Heap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trie.html">Trie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DoublyLinkedList.html">Doubly Linked List</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">outlabq2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">q2</a> &raquo;</li>
+      <li>Singly Linked List</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/SinglyLinkedList.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="module-DSA">
+<span id="singly-linked-list"></span><h1>Singly Linked List<a class="headerlink" href="#module-DSA" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="DSA.SinglyLinkedListNode">
+<em class="property">class </em><code class="descclassname">DSA.</code><code class="descname">SinglyLinkedListNode</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#SinglyLinkedListNode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.SinglyLinkedListNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class represents each node in a singly linked list.
+Each object has attributes</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">data</span></code> (The data stored in the node)</li>
+<li><code class="docutils literal notranslate"><span class="pre">next</span></code> (The next node in the list)</li>
+</ul>
+</div></blockquote>
+<dl class="docutils">
+<dt>The list of member functions are</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">__init__(data)</span></code> (A constructor)</li>
+<li><code class="docutils literal notranslate"><span class="pre">__str__()</span></code> (converts the node object to a string)</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="DSA.SinglyLinkedListNode.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#SinglyLinkedListNode.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.SinglyLinkedListNode.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a constructor for the Node object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – Represents the data stored in the node.</td>
+</tr>
+</tbody>
+</table>
+<p><code class="docutils literal notranslate"><span class="pre">next</span></code> is initialized to None.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">SinglyLinkedListNode</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">SinglyLinkedListNode</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">data</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">next</span><span class="p">)</span>
+<span class="go">None</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="DSA.SinglyLinkedListNode.__str__">
+<code class="descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#SinglyLinkedListNode.__str__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.SinglyLinkedListNode.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>This converts the node object to a string.
+This is done by converting the data stored in it to a string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">str(data)</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">SinglyLinkedListNode</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">SinglyLinkedListNode</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="fm">__str__</span><span class="p">()</span>
+<span class="go">&#39;3&#39;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="DSA.SinglyLinkedList">
+<em class="property">class </em><code class="descclassname">DSA.</code><code class="descname">SinglyLinkedList</code><a class="reference internal" href="_modules/DSA.html#SinglyLinkedList"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.SinglyLinkedList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class represents a singly linked list
+The list has attributes</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">head</span></code> (representing the head of the list)</li>
+<li><code class="docutils literal notranslate"><span class="pre">tail</span></code> (representing the tail of the list)</li>
+</ul>
+</div></blockquote>
+<dl class="docutils">
+<dt>The list of available functions is</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">__init__()</span></code> (A constructor for the Singly Linked List)</li>
+<li><code class="docutils literal notranslate"><span class="pre">insert(data)</span></code> (Inserts the given data at the tail of the list)</li>
+<li><code class="docutils literal notranslate"><span class="pre">find(data)</span></code> (Checks if some data is in a list and returns the node before the first instance of the node containing the given data)</li>
+<li><code class="docutils literal notranslate"><span class="pre">deleteVal(data)</span></code> (Deletes an instance of the given data from the Singly Linked List)</li>
+<li><code class="docutils literal notranslate"><span class="pre">printer(sep</span> <span class="pre">=</span> <span class="pre">',</span> <span class="pre">')</span></code> (Prints out the Singly Linked List, just like a normal Python List)</li>
+<li><code class="docutils literal notranslate"><span class="pre">reverse()</span></code> (Reverses the Singly Linked List)</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="DSA.SinglyLinkedList.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#SinglyLinkedList.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.SinglyLinkedList.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a constructor for the Singly Linked List.</p>
+<p><code class="docutils literal notranslate"><span class="pre">head</span></code> and <code class="docutils literal notranslate"><span class="pre">tail</span></code> are initialized to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">SinglyLinkedList</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">SinglyLinkedList</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">head</span><span class="p">)</span>
+<span class="go">None</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">tail</span><span class="p">)</span>
+<span class="go">None</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="DSA.SinglyLinkedList.deleteVal">
+<code class="descname">deleteVal</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#SinglyLinkedList.deleteVal"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.SinglyLinkedList.deleteVal" title="Permalink to this definition">¶</a></dt>
+<dd><p>This deletes an instance of the given data from the Singly Linked List.
+If the data is not present in the Singly Linked List it will return False.
+Otherwise, it will delete the first instance of the node containing the given data and return True.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>data</strong> – Represents the data to be deleted.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">True if the data is present in the list, False otherwise</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">Boolean</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">SinglyLinkedList</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">SinglyLinkedList</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">deleteVal</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">deleteVal</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="DSA.SinglyLinkedList.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#SinglyLinkedList.find"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.SinglyLinkedList.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>This checks if some data is in a list and returns the node before the first instance of the node containing the given data.
+If the data is not present it returns the tail node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>data</strong> – Represents the data that is searched for.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The node before the first instance of the node containing the given data.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="#DSA.SinglyLinkedListNode" title="DSA.SinglyLinkedListNode">SinglyLinkedListNode</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">SinglyLinkedList</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">SinglyLinkedList</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">data</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="DSA.SinglyLinkedList.insert">
+<code class="descname">insert</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#SinglyLinkedList.insert"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.SinglyLinkedList.insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>This inserts the given data at the tail of the list.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>data</strong> – Represents the data to be inserted at the tail of the list.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">SinglyLinkedList</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">SinglyLinkedList</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">data</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">data</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="DSA.SinglyLinkedList.printer">
+<code class="descname">printer</code><span class="sig-paren">(</span><em>sep='</em>, <em>'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#SinglyLinkedList.printer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.SinglyLinkedList.printer" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function prints out the Singly Linked List, just like a normal Python List.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>sep</strong> (<em>string</em>) – Represents the separator between List Elements. It’s default value is ‘, ‘.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">None</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">SinglyLinkedList</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">SinglyLinkedList</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">printer</span><span class="p">()</span>
+<span class="go">[3, 4]</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="DSA.SinglyLinkedList.reverse">
+<code class="descname">reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#SinglyLinkedList.reverse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.SinglyLinkedList.reverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function reverses the Singly Linked List.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">SinglyLinkedList</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">SinglyLinkedList</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">printer</span><span class="p">()</span>
+<span class="go">[4, 3]</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="DSA.merge">
+<code class="descclassname">DSA.</code><code class="descname">merge</code><span class="sig-paren">(</span><em>list1</em>, <em>list2</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#merge"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.merge" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function merges two sorted Singly Linked Lists such that the merged list is also sorted.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>list1</strong> (<a class="reference internal" href="#DSA.SinglyLinkedList" title="DSA.SinglyLinkedList"><em>SinglyLinkedList</em></a>) – One of the sorted lists to be merged.</li>
+<li><strong>list2</strong> (<a class="reference internal" href="#DSA.SinglyLinkedList" title="DSA.SinglyLinkedList"><em>SinglyLinkedList</em></a>) – The other sorted list to be merged.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The merged list.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="#DSA.SinglyLinkedList" title="DSA.SinglyLinkedList">SinglyLinkedList</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">merge</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">SinglyLinkedList</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">SinglyLinkedList</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mf">3.5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">merge</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">printer</span><span class="p">()</span>
+<span class="go">[3, 3.5, 4, 7]</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="q2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Heap.html" class="btn btn-neutral float-right" title="Heap" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, 210050023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

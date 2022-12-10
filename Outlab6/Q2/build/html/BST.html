@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Binary Search Tree &mdash; outlabq2  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Heap" href="Heap.html" />
+    <link rel="prev" title="Doubly Linked List" href="DoublyLinkedList.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> outlabq2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">q2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="SinglyLinkedList.html">Singly Linked List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DoublyLinkedList.html">Doubly Linked List</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Binary Search Tree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Heap.html">Heap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trie.html">Trie</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">outlabq2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">q2</a> &raquo;</li>
+      <li>Binary Search Tree</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/BST.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="module-DSA">
+<span id="binary-search-tree"></span><h1>Binary Search Tree<a class="headerlink" href="#module-DSA" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="DSA.BSTNode">
+<em class="property">class </em><code class="descclassname">DSA.</code><code class="descname">BSTNode</code><span class="sig-paren">(</span><em>info</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#BSTNode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.BSTNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class represents each node in a Binary Search Tree.
+Each node has attributes</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">info</span></code> (The data stored in the node)</li>
+<li><code class="docutils literal notranslate"><span class="pre">left</span></code> (The left child of the node)</li>
+<li><code class="docutils literal notranslate"><span class="pre">right</span></code> (The right child of the node)</li>
+<li><code class="docutils literal notranslate"><span class="pre">level</span></code> (The level of the node from the root)</li>
+</ul>
+</div></blockquote>
+<dl class="docutils">
+<dt>The member functions available are</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">__init__(info)</span></code> (a constructor for the Node)</li>
+<li><code class="docutils literal notranslate"><span class="pre">__str__()</span></code> (converts the Node object into a string)</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="DSA.BSTNode.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>info</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#BSTNode.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.BSTNode.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a constructor for the Node
+:param info: The data to be stored in the node
+:return: <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">BSTNode</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">info</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="DSA.BSTNode.__str__">
+<code class="descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#BSTNode.__str__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.BSTNode.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>This converts the Node object into a string, by returning the string form of the data stored in the Node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">str(info)</span></code></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">BSTNode</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="fm">__str__</span><span class="p">()</span>
+<span class="go">&#39;3&#39;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="DSA.BinarySearchTree">
+<em class="property">class </em><code class="descclassname">DSA.</code><code class="descname">BinarySearchTree</code><a class="reference internal" href="_modules/DSA.html#BinarySearchTree"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.BinarySearchTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class represents a Binary Search Tree.
+Each object has an attribute <code class="docutils literal notranslate"><span class="pre">root</span></code>, representing the root of the Binary Search Tree.</p>
+<dl class="docutils">
+<dt>The member functions available are</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">__init__()</span></code> (a constructor that initializes the root to <code class="docutils literal notranslate"><span class="pre">None</span></code>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">insert(val)</span></code> (inserts a given value into the Binary Search Tree)</li>
+<li><code class="docutils literal notranslate"><span class="pre">traverse(order)</span></code> (prints out a given traversal of the Binary Search Tree)</li>
+<li><code class="docutils literal notranslate"><span class="pre">height(root)</span></code> (returns the height of a particular node in the Binary Search Tree from the leaves)</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="DSA.BinarySearchTree.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#BinarySearchTree.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.BinarySearchTree.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is a constructor that initializes the root to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">BinarySearchTree</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">BinarySearchTree</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">root</span><span class="p">)</span>
+<span class="go">None</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="DSA.BinarySearchTree.height">
+<code class="descname">height</code><span class="sig-paren">(</span><em>root</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#BinarySearchTree.height"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.BinarySearchTree.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>This returns the height of a particular node in the Binary Search Tree from the leaves.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>root</strong> (<a class="reference internal" href="#DSA.BSTNode" title="DSA.BSTNode"><em>BSTNode</em></a>) – This refers to the node whose height we’re calculating</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The height of the given node</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">Integer</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">BinarySearchTree</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">BinarySearchTree</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">height</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+<span class="go">2</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="DSA.BinarySearchTree.insert">
+<code class="descname">insert</code><span class="sig-paren">(</span><em>val</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#BinarySearchTree.insert"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.BinarySearchTree.insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is inserts a given value into the Binary Search Tree.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>val</strong> – The value to be inserted in the Binary Search Tree.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">BinarySearchTree</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">BinarySearchTree</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">69</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">info</span>
+<span class="go">69</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="DSA.BinarySearchTree.traverse">
+<code class="descname">traverse</code><span class="sig-paren">(</span><em>order</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DSA.html#BinarySearchTree.traverse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DSA.BinarySearchTree.traverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function prints out a given traversal of the Binary Search Tree.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>order</strong> (<em>string</em>) – It can be either <code class="docutils literal notranslate"><span class="pre">'PRE'</span></code> (Preorder), <code class="docutils literal notranslate"><span class="pre">'IN'</span></code> (Inorder), <code class="docutils literal notranslate"><span class="pre">'POST'</span></code> (Postorder), and refers to the order in which the tree is printed</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">DSA</span> <span class="kn">import</span> <span class="n">BinarySearchTree</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">BinarySearchTree</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mf">3.5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">traverse</span><span class="p">(</span><span class="s1">&#39;PRE&#39;</span><span class="p">)</span>
+<span class="go">4 3 2 3.5 5 7 6 8 </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">traverse</span><span class="p">(</span><span class="s1">&#39;IN&#39;</span><span class="p">)</span>
+<span class="go">2 3 3.5 4 5 6 7 8 </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">traverse</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">)</span>
+<span class="go">2 3.5 3 6 8 7 5 4 </span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="DoublyLinkedList.html" class="btn btn-neutral float-left" title="Doubly Linked List" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Heap.html" class="btn btn-neutral float-right" title="Heap" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, 210050023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

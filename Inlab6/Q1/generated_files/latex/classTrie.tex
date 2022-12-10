@@ -1,0 +1,128 @@
+\hypertarget{classTrie}{}\doxysection{Trie Class Reference}
+\label{classTrie}\index{Trie@{Trie}}
+
+
+The class for a Suffix-\/\+Trie.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTrie_a6af57e9f25d0d0a2d59eea5a4a802908}{Trie}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classTrie}{Trie}} object with no nodes and an empty Dictionary. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTrie_adf349469d2452a6e76b6420b791ad6f2}{find}} (\mbox{\hyperlink{classTrie}{Trie}} $\ast$T, char c)
+\begin{DoxyCompactList}\small\item\em Checks if a character is present in the dictionary. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTrie_a45e975d085aeff53b6ca714488dc7ff5}{insert}} (string s)
+\begin{DoxyCompactList}\small\item\em Inserts a string into the Suffix \mbox{\hyperlink{classTrie}{Trie}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTrie_a3822e93e8f3f5459875fde2bd2d94a93}{check\+Prefix}} (string s)
+\begin{DoxyCompactList}\small\item\em Checks if a prefix of a given string is present in our \mbox{\hyperlink{classTrie}{Trie}}. \end{DoxyCompactList}\item 
+long long int \mbox{\hyperlink{classTrie_a0d9dee68c77a3d9b753cd40aff34393e}{count\+Prefix}} (string s)
+\begin{DoxyCompactList}\small\item\em Counts the number of prefixes of a given string present in our \mbox{\hyperlink{classTrie}{Trie}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTrie_a585870334cbcab3f838cf896a322807b}\label{classTrie_a585870334cbcab3f838cf896a322807b}} 
+long long int \mbox{\hyperlink{classTrie_a585870334cbcab3f838cf896a322807b}{count}}
+\begin{DoxyCompactList}\small\item\em Count of nodes in the trie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTrie_a75b519c66d04cf7714a7bffd25ef624e}\label{classTrie_a75b519c66d04cf7714a7bffd25ef624e}} 
+map$<$ char, \mbox{\hyperlink{classTrie}{Trie}} $\ast$ $>$ \mbox{\hyperlink{classTrie_a75b519c66d04cf7714a7bffd25ef624e}{nodes}}
+\begin{DoxyCompactList}\small\item\em Dictionary of pointers to nodes with characters as keys and pointers to Tries as values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class for a Suffix-\/\+Trie. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTrie_a6af57e9f25d0d0a2d59eea5a4a802908}\label{classTrie_a6af57e9f25d0d0a2d59eea5a4a802908}} 
+\index{Trie@{Trie}!Trie@{Trie}}
+\index{Trie@{Trie}!Trie@{Trie}}
+\doxysubsubsection{\texorpdfstring{Trie()}{Trie()}}
+{\footnotesize\ttfamily Trie\+::\+Trie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classTrie}{Trie}} object with no nodes and an empty Dictionary. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTrie_a3822e93e8f3f5459875fde2bd2d94a93}\label{classTrie_a3822e93e8f3f5459875fde2bd2d94a93}} 
+\index{Trie@{Trie}!checkPrefix@{checkPrefix}}
+\index{checkPrefix@{checkPrefix}!Trie@{Trie}}
+\doxysubsubsection{\texorpdfstring{checkPrefix()}{checkPrefix()}}
+{\footnotesize\ttfamily bool Trie\+::check\+Prefix (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if a prefix of a given string is present in our \mbox{\hyperlink{classTrie}{Trie}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The given string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if any prefix of the given string is present in our \mbox{\hyperlink{classTrie}{Trie}} 
+
+false if no prefix of the given string is present in our \mbox{\hyperlink{classTrie}{Trie}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrie_a0d9dee68c77a3d9b753cd40aff34393e}\label{classTrie_a0d9dee68c77a3d9b753cd40aff34393e}} 
+\index{Trie@{Trie}!countPrefix@{countPrefix}}
+\index{countPrefix@{countPrefix}!Trie@{Trie}}
+\doxysubsubsection{\texorpdfstring{countPrefix()}{countPrefix()}}
+{\footnotesize\ttfamily long long int Trie\+::count\+Prefix (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Counts the number of prefixes of a given string present in our \mbox{\hyperlink{classTrie}{Trie}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The given string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of prefixes of this string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrie_adf349469d2452a6e76b6420b791ad6f2}\label{classTrie_adf349469d2452a6e76b6420b791ad6f2}} 
+\index{Trie@{Trie}!find@{find}}
+\index{find@{find}!Trie@{Trie}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily bool Trie\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTrie}{Trie}} $\ast$}]{T,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if a character is present in the dictionary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & A pointer to the trie \\
+\hline
+{\em c} & The character whose existence in the dictionary is to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the character is present 
+
+false If the character is not present 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrie_a45e975d085aeff53b6ca714488dc7ff5}\label{classTrie_a45e975d085aeff53b6ca714488dc7ff5}} 
+\index{Trie@{Trie}!insert@{insert}}
+\index{insert@{insert}!Trie@{Trie}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Trie\+::insert (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts a string into the Suffix \mbox{\hyperlink{classTrie}{Trie}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to be inserted \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{DSA_8cpp}{D\+S\+A.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+NAME: ASHWIN ABRAHAM
+ROLL NO: 210050023
+
+https://www.gnu.org/software/gawk/manual/gawk.html
+
+https://www.regexper.com/
+
+https://www.gnu.org/software/sed/manual/sed.html
+
+https://www.tutorialspoint.com/checking-for-valid-email-address-using-regular-expressions-in-java
+
+https://stackoverflow.com/questions/9332802/how-to-write-a-bash-script-that-takes-optional-input-arguments
+
+https://piazza.com/class/l6aesjdhxpa781/post/32
+
+https://en.wikipedia.org/wiki/Email_address

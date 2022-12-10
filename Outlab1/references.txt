@@ -1,0 +1,13 @@
+ROLL NUMBER: 210050023
+NAME: ASHWIN ABRAHAM
+LINK TO WEBPAGE: https://www.cse.iitb.ac.in/~ashwinabraham
+(to open it locally, open index.html in a browser)
+
+REFERENCES:
+The images used in the Website were taken either by me or my friends through the course of our college lives.
+I have used Bootstrap Icons (https://icons.getbootstrap.com/)
+
+I mainly learnt Bootstrap from https://getbootstrap.com/ , https://www.w3schools.com/bootstrap/ , https://mdbootstrap.com/ ,  https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/ , and when I had doubts, googling them and referring 
+to answers from Stack Overflow.
+
+HTML and CSS were also learnt from https://www.tutorialrepublic.com/html-tutorial/, https://www.w3schools.com/html/default.asp , https://www.w3schools.com/css/default.asp, https://www.tutorialrepublic.com/css-tutorial/ and Stack Overflow.

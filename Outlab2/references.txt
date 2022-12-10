@@ -1,0 +1,8 @@
+https://stackoverflow.com/questions/3161204/how-to-find-the-nearest-parent-of-a-git-branch
+https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/
+https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages
+https://stackoverflow.com/questions/3161204/how-to-find-the-nearest-parent-of-a-git-branch
+https://stackoverflow.com/questions/67900936/use-cut-in-shell-to-extract-last-word
+https://stackoverflow.com/questions/16616975/how-do-i-get-the-last-word-in-each-line-with-bash
+https://stackoverflow.com/questions/2746553/read-values-into-a-shell-variable-from-a-pipe
+Sample Git Hooks

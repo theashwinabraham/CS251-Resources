@@ -1,0 +1,7 @@
+NAME: ASHWIN ABRAHAM
+ROLL NO: 210050023
+
+https://www.w3schools.com/sql/sql_where.asp
+https://stackoverflow.com/questions/21958789/sqlite-insert-issue-error-no-such-column
+https://regexper.com/
+https://pynative.com/python-sqlite/

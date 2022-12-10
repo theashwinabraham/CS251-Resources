@@ -1,0 +1,4 @@
+https://www.gnu.org/software/gawk/manual/gawk.html
+https://www.tutorialspoint.com/sed/sed_loops.htm
+https://stackoverflow.com/questions/10931915/how-can-i-read-words-instead-of-lines-from-a-file
+https://stackoverflow.com/questions/16508781/how-to-create-a-dictionary-with-awk-in-linux
